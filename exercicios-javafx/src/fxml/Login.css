@@ -1,0 +1,27 @@
+.login{
+/*
+    -fx-background-color: linear-gradient(to right, rgb(20, 136, 204), rgb(43, 50, 178));
+    -fx-background-color: linear-gradient(to right, #b00093, #142f7a);
+    -fx-background-color: linear-gradient(to right, #f857a6, #ff7545);
+    -fx-background-color: linear-gradient(to right, red, orange, yellow, lawngreen, dodgerblue, cyan, deeppink, purple);
+    -fx-background-color: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+*/
+    -fx-background-color: linear-gradient(to right, #0b7d94, #724085, #a8363c);
+
+}
+
+.login-titulo{
+    -fx-font-size: 20px;
+    -fx-text-fill: #fff;
+}
+
+.login-form-label{
+    -fx-font-size: 16px;
+    -fx-text-fill: #fff;
+}
+
+.login-form-botao{
+    -fx-font-size: 16px;
+}
+
+

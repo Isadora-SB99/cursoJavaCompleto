@@ -1,0 +1,26 @@
+criar classes:
+Cliente - 
+cliente tem lista de compras
+criar um metodo que diga quanto dinheiro o cliente gastou: obterValorTotal
+String nome
+lista<Compras>
+
+Compra - 2
+uma compra pode ter(ser de) apenas um cliente
+uma compra pode ter uma lista de itens
+lista <Item>
+
+Item - 2
+um item pode ter (pertencer a) apenas uma compra
+um item tem um produto
+int qtd
+Produto p1
+
+Produto - n
+um produto pode estar presente em vários itens
+dentro do Produto não precisa ter uma lista de item
+double preco
+String nome
+
+ClienteTeste - 
+psvm

@@ -1,0 +1,11 @@
+
+    /*
+     * criar 3 classes
+     * pessoa (nome, peso, metodo comer{param.outro obj classe comimda: peso pessoa+pesoComida})
+     * 
+     * comida nomeComida, pesoComida
+     * 
+     * jantar main(instanciar pessoa, instancias 2 comidas: pessoa come comida
+     mostra peso antes e depois de comer)
+     */
+

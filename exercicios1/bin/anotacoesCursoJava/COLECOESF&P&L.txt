@@ -1,0 +1,26 @@
+* Numa fila First In First Out -> o primeiro a entrar é o primeiro a sair;
+aqui o .peek mostra o primeiro item adicionado:
+1
+2
+3
+4
+5
+.peek = 1;
+
+quando manda imprimir mostra 1,2,3,4,5
+
+(O QUE VAI SAIR PRIMEIRO FICA NA FRENTE ^ v )
+
+* Numa pilha First In Last Out -> o primeiro a entrar é o ultimo a sair;
+aqui o .peek mostra o ultimo item adicionado:
+1
+2
+3
+4
+5
+.peek = 5;
+
+quando manda imprimir mostra 5,4,3,2,1
+
+* Numa lista: manipulação de dados mais facil; pode selecionar itens pelo index para mexer;
+pode remover item (1), por exemplo. ou imprimir item (5)...

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app-api-publica/app.api.iml" filepath="$PROJECT_DIR$/app-api-publica/app.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-calculo/app.calculo.iml" filepath="$PROJECT_DIR$/app-calculo/app.calculo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-financeiro/app.financeiro.iml" filepath="$PROJECT_DIR$/app-financeiro/app.financeiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-logging/app.logging.iml" filepath="$PROJECT_DIR$/app-logging/app.logging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bancoRelacional/bancoRelacional.iml" filepath="$PROJECT_DIR$/bancoRelacional/bancoRelacional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calculadora/calculadora.iml" filepath="$PROJECT_DIR$/calculadora/calculadora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/campo-minado-swing1/campo-minado-swing1.iml" filepath="$PROJECT_DIR$/campo-minado-swing1/campo-minado-swing1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/campo-minado1/campo-minado1.iml" filepath="$PROJECT_DIR$/campo-minado1/campo-minado1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios-javafx/exercicios-javafx.iml" filepath="$PROJECT_DIR$/exercicios-javafx/exercicios-javafx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios-jpa/exercicios-jpa.iml" filepath="$PROJECT_DIR$/exercicios-jpa/exercicios-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios-sb/exercicios-sb.iml" filepath="$PROJECT_DIR$/exercicios-sb/exercicios-sb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios1/exercicios1.iml" filepath="$PROJECT_DIR$/exercicios1/exercicios1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/worspace-cursoJava.iml" filepath="$PROJECT_DIR$/worspace-cursoJava.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,7 @@
+JRE = Java Runtime Enviroment > usuario
+
+JDK = Java Developer Kit > dev
+
+JVM = Java Virtual Machine
+
+quando escreve em java, o programa é salvo em byteCode. jvm traduz isso pra outras linguagens (windows, linux, mac...)

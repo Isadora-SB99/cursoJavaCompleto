@@ -1,0 +1,79 @@
+#1: ENCAPSULAMENTO => tudo que fica "escondido". exemplo em um PC: o encapsulado seria a placa mãe,
+ as soldas que a compõe, a placa de memoria. o usuario não precisa conhecer/saber mexer nessas parte,
+apenas na parte de contato com usuario (mouse, teclado,etc.)
+
+    - tendo 3 objetos. quando o obj2 vai usar o obj3, caso o obj3 tenha metodos visiveis e metodos que
+    não são visíveis, apenas dentro do obj3. EX.: quando vai chamar o metodo obj2.obj3,
+    o autocomplete só mostratia no locar do obj3 os metodos visiveis. Em linguagem java, o que o usuario
+    tem acesso são os "public" e os escondidos são os "private".
+    *NÍVEIS DE ENCAPSULAMENTO ===>
+    **BAIXO NÍVEL DE ENCAPSULAMENTO/ALTO ACOPLAMENTO:2 classes: A, com tudo publico e B com tudo publico.
+    ambas tem diversos metodos que se "enroscam" entre si. sendo tudo publico, qualquer mudança gerada
+    em uma variavel sequer, pode gerar muitos problemas. 
+    **NÍVEL MÉDIO(?) DE ENCAPSULAMENTO:novamente 2 classes, cada uma com um public e diversos private.
+    alterando algo em um metodo private de uma das classes, tem muito mais chance de não gerar impacto na outra classe
+    OBJETO AGRUPA ATRIBUTOS E COMPORTAMENTOS
+    (objeto(=classe?) "Pessoa"); (atributos(=variavel?) "idade"); (comportamento(=metodo?));
+
+    +++Do mais pro menos encapsulado: private -> package(default) -> protected -> public
+    (o nome dos níveis de proteção são palavras reservadas)
+    +Private: só pode ser acessado dentro da própria classe; O mais restrito possível
+    +Package: atributos e metodos só podem ser acessados dentro do proprio pacote;
+    +Protected: depende da herança. Pode acessar o atributo em outro pacote, desde que ele seja herdado;
+    +Public: qualquer classe do sistema pode acessar; o menos restrito de todos;
+
+    java 9 MODULO!!
+
+#2: HERANÇA => reuso de código pode ser por composição (visto em aulas anteriores) ou por herança.
+ priorizar composição, pois é mais flexível que a herança.
+
+    exemplo geral (não é regra fixa): composição: o carro TEM UM motor, o carro TEM portas... VS herança: civic É UM carro, gato É UM mamífero...
+    herança: imaginando um civic como sendo um carro:
+    classe Carro; int girosMotor; metodo ligar; metodo desligar; metodo acelerar...
+    classe Civic; extends Carro; (vem junto int girosMotor e os metodos)
+    quanto mais generico, menos classes deve ter. EX.: classe Animal: não deve ter metodo mamar,
+    pois nem todos os animais mamam; devem ter apenas coisas que todos os animais tem em comum.
+    **super classe (+generica)--> sub classe (+específica)
+
+    extends (palavra reservada)
+
+#3: POLIMORFISMO => multiplas formas; duas formas estático (sobrecarga) e dinâmico.
+
+    *MODO ESTÁTICO: quando tem mais de um metodo com o mesmo nome (mas com parametros diferentes),
+    temos uma sobrecarga: estamos sobrecarregando aquele nome; temos o mesmo nome funcionando de multiplas formas (polimorfismo)
+    sinonimos: sobrecarga = polimorfismo estático;
+
+    *MODO DINÂMICO: precisa ter herança;
+    super classe Carro;
+    sub classe Civic;
+    sub classe Ferrari;
+
+    (chama construtor)(chama o metodo)
+        Civic c =       new Civic ();
+        Carro c =       new Civic();
+    podemos ter um construtor mais específico ou um mais generico, desde que chame o metodo específico;
+    a partir do momento que se usou um construtor generico pra "c" e definimos que é um carro, podemos
+    atribuir qualquer carro, Civic ou Ferrari, então é possível:
+        c = new Ferrari():
+    pode mudar a forma do tipo genérico "c". "c" é do tipo carro, portanto pode receber objetos de multiplas formas (polimorfismo).
+    não pode atribuir Civic pra Ferrari, nem Ferrari pra um Civic, mas ambos podem ser atribuídos pra carro.
+
+    a mesma regra pode ser seguida quando criando parametros de um metodo:
+    void estacionar (Civic c){...} - pode receber apenas Civic
+    void estacionar (Carro c){...} - pode receber tanto Civic quanto Ferrari
+
+#4: ABSTRAÇÃO => pegar um conceito do mundo real e simplificar o conceito pro software;
+
+    EX.: faculdade
+    class Professor
+    class Disciplina
+    class Sala
+    class Aluno
+
+    nem todas as classes do programa têm um correpondente do mundo real e nem tudo que existe no mundo real vai ir para o software;
+
+    num exemplo de lojas, uma loja pequena VS. a amazon
+    no estoque, a loja pequena organiza por tipo de produto (mouses, teclados...), 
+    já a amazon precisa saber tamanho das caixas para poder otimizar melhor o espaço (lidam com muitos produtos)
+        a amazon não se preocupa com o material da caixa, 
+        já a loja pequena dá desconto caso a caixa seja reciclada, então essa informação é relevante

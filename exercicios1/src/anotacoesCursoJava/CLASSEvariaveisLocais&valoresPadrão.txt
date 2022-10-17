@@ -1,0 +1,21 @@
+VARIAVEIS LOCAIS
+variaveis declaradas dentro do metodo são variaveis(atributo)/constante locais;
+area de visibilidade da variavel é só dentro do metodo, a partir da linha onde foi declarada a variavel.
+
+quando declaradas fora de um metodo podem ser:
+variavel(atributo)/constante de instancia/objeto ou variavel(atributo)/constante de classe;
+essas podem ser acessadas por metodos dentro de seu escopo,
+e podem esta\r em qualquer lugar no codigo, inclusive no final
+
+VALOR PADRÃO:
+byte, short, int, long -> 0;
+float, double -> 0.0;
+boolean -> false;
+char -> "\u0000"
+
+Objetos -> null
+String s; //s= null
+
+-----------
+variavel local não é inicializada por padraão;
+variavel de instancia ou de classe são inicializadas por padrão
